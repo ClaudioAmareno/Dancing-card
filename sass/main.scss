@@ -14,17 +14,15 @@ body {
 	align-items: center;
 	height: 100vh;
 	font-family: 'Red Hat Display', sans-serif;
-	background-color: hsl(225, 100%, 94%);
-	background-image: url('../img/pattern-background-desktop.svg');
-	background-repeat: repeat-x;
+	background: url('../img/pattern-background-desktop.svg') no-repeat top / contain;;
+	background-color: hsl(225, 100%, 94%);	
 }
 
 .card {
-	height: 70rem;
+	height: 70em;
 	width: 45em;
 	border-radius: 20px;
 	background-color: #fff;
-	box-shadow: 0px 8px 20px gray;
 	overflow: hidden;
 
 	&__container {
@@ -110,7 +108,7 @@ body {
 				color: #fff;
 				border-radius: 10px;
 				border: none;
-				box-shadow: 5px 5px 10px gray;
+				box-shadow: 0 11px 10px hsl(245, 75%, 90%);
 				transition: background-color 0.2s;
 				cursor: pointer;
 
@@ -150,6 +148,12 @@ body {
 		height: 100%;
 		margin: 10em 0 2em 0;
 
+		&__img {
+			img {
+				width: 100%;
+			}
+		}
+
 		&__container {
 			&-text {
 				&-summary {
@@ -176,9 +180,9 @@ body {
 				}
 			}
 
-            &-cancel{
-                padding-bottom: 2em;
-            }
+			&-cancel {
+				padding-bottom: 2em;
+			}
 		}
 	}
 }
