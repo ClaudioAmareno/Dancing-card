@@ -14,8 +14,8 @@ body {
 	align-items: center;
 	height: 100vh;
 	font-family: 'Red Hat Display', sans-serif;
-	background: url('../img/pattern-background-desktop.svg') no-repeat top / contain;;
-	background-color: hsl(225, 100%, 94%);	
+	background: url('../img/pattern-background-desktop.svg') no-repeat top / contain;
+	background-color: hsl(225, 100%, 94%);
 }
 
 .card {
@@ -31,9 +31,7 @@ body {
 		align-items: center;
 
 		&-text {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			text-align: center;
 			margin-top: 3em;
 
 			&-summary {
@@ -44,7 +42,6 @@ body {
 
 			&-description {
 				padding: 1.5em 4em 0 5em;
-				text-align: center;
 				font-size: 1.6em;
 				line-height: 1.5;
 				color: hsl(224, 23%, 55%);
@@ -109,7 +106,7 @@ body {
 				border-radius: 10px;
 				border: none;
 				box-shadow: 0 11px 10px hsl(245, 75%, 90%);
-				transition: background-color 0.2s;
+				transition: background-color .5s;
 				cursor: pointer;
 
 				&--mod:hover {
@@ -123,10 +120,9 @@ body {
 
 			&-order {
 				font-size: 1.5em;
-				color: hsl(224, 23%, 55%);
-				text-transform: capitalize;
 				font-weight: 700;
-				transition: color 0.2s;
+				text-transform: capitalize;
+				color: hsl(224, 23%, 55%);
 				cursor: pointer;
 
 				&--mod:hover {
@@ -140,7 +136,7 @@ body {
 
 @media (max-width: 576px) {
 	body {
-		background-image: url('/img/pattern-background-mobile.svg');
+		background-image: url('../img/pattern-background-mobile.svg');
 	}
 
 	.card {
